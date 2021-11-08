@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Lato', sans-serif;
+margin: 0;
+
+}
+.header{
+    padding: 15px 0;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0; /*сбрасываем отступ слева в списке*/
+    margin: 0;
+   
+}
+.navigation-link{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #939699;
+    font-family: 'Lato',sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.5px;
+}
+.button{
+    padding: 10px 20px;
+    background: #4592FF;
+    border-radius: 20px;
+    border:none;
+    color:#fff ;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button-icon,.button-price{
+    margin-right: 10px;
+}
+.button-icon:last-child{
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.slide{
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.slide-1{
+    background-color: #B4D1E0 ; /*url(../img/slide-img-1.jpg); /* no-repeat top right 20%;*/
+    background-image:url(../img/slide-img-1.png);
+    background-repeat: no-repeat;
+    background-position: top right 30%;
+}
+.slide-2{
+    background-color: #95e98d ; /*url(../img/slide-img-1.jpg); /* no-repeat top right 20%;*/
+    background-image:url(../img/slide-img-1.png);
+    background-repeat: no-repeat;
+    background-position: top right 30%;
+}
+
+.slide-3{
+    background-color: #f797af ; /*url(../img/slide-img-1.jpg); /* no-repeat top right 20%;*/
+    background-image:url(../img/slide-img-1.png);
+    background-repeat: no-repeat;
+    background-position: top right 30%;
+}
+.label{
+    background: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    color: #fff;
+    font-size: 12px;
+line-height: 15px;
+} 
+.slide-title{
+    color: #262D33;
+    font-size: 55px;
+    line-height: 70px;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 15px;
+
+}
+.slide-description{
+    color: #4B5157;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 335px;
+     margin-bottom: 40px;
+
+}
+.slider{
+    position: relative;
+}
+.slider-nav{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%); /*центруем кнопки таким образом*/
+    z-index: 9; /* задаем этот параметр когда кнопки пропадают после подключения библиотеки слайдера*/
+
+}
+.slide-button{
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+}
+.card{
+    min-height: 370px;
+    border-radius: 10px;
+    padding: 60px 46px 80px 46px;
+
+}
+.card-1{
+    background:url(../img/image-016.jpg) no-repeat top right; /*прижимает карточку внутри своих 6ти колонок*/
+    background-size: cover;/*чтоб карточка заполняла полностью отведенное ей пространство*/
+   
+}
+.card-2{
+    background:url(../img/image-117.jpg) no-repeat top right; /*прижимает карточку внутри своих 6ти колонок*/
+    background-size: cover;/*чтоб карточка заполняла полностью отведенное ей пространство*/
+   
+}
+.card-3{
+    padding-top: 35px;
+   background:  #CCD5E6 url(../img/woman.png) no-repeat top right 10%;
+
+}
+.card-4{
+    padding-top: 35px;
+    padding-left: 25px;
+   background:#FF4F52 url(../img/image-118.png) no-repeat top right;
+
+}
+
+.card-title{
+    color: #262D33;
+    font-family: 'Roboto Slab';
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+max-width: 222px;
+margin: 0;
+}
+.card-title.large{
+    max-width: 420px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card-text{
+    max-width: 176px;
+    color: #4B5157;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+.card-text.large{
+    max-width: 320px;
+}
+.light-text{
+    color: #fff;
+}
+
+.card-price{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.section-title{
+    font-family:'Roboto Slab', serif;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262033;
+}
+.more{
+    text-decoration: none;
+    font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 20px;
+color: #262D33;
+}
+.goods-card{
+    position: relative;
+    text-align: center;
+    padding: 30px 35px 35px 35px;
+
+
+}
+.goods-card .label{
+    position: absolute;
+    left: 18px;
+    top: 18px;
+
+}
+
+.goods-title{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #262D33;
+    font-size: 16px;
+line-height: 25px;
+font-family:'Roboto Slab', serif;
+}
+.goods-description{
+    font-size: 14px;
+line-height: 20px;
+color: #4B5157;
+}
+.goods-price{
+    font-size: 18px;
+line-height: 30px;
+color: #262D33;
+font-weight: 900;
+margin-top: 30px;
+
+}
+
+.footer{
+    background-color: #8F79D4;
+    padding-top:45px;
+    padding-bottom:40px;
+    color:#fff;
+}
+.footer-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+font-size: 14px;
+line-height: 20px;
+}
+
+.footer-menu-item:not(:last-child){ /*для каждого пункта меню, но не для последнего- отступ*/
+   margin-right: 40px;
+}
+
+.social-link{
+    text-decoration: none;
+    margin-left: 15px;
+}
+.footer-text{
+    color: #E7D9FF;
+    font-size: 14px;
+line-height: 20px;
+}
+.footer-line{
+    color: #fff;
+    opacity: 0.5;
+    margin: 44px 0;
+}
+
+.top-link{
+    text-decoration: none;
+    color: #fff;
+}
+.top-link-text{
+    margin-right: 15px;
+}
+
+.payment{
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+@media (max-width:1200px){  /* чтоб изображение не отделялось от фона при уменьшении экрана*/
+    .slide-1,.slide-2,.slide-3{
+        background-size: cover;
+    }
+}
+@media (max-width:992px){  /* скрываем кнопки*/
+    .slider-nav{
+        display: none;
+    }
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width:576px){
+    .slider-title{
+        font-size: 36px;  /* уменьшаем размер заголовка*/
+        line-height:1.4 ;
+        margin-bottom: 0;
+    }
+    .card{
+        background-position: left top;/* картинка позиционируется не с права, а с лева и текст поэтому ,при уменьшении экрана,никогда не заползает на картинку*/
+       
+    }
+    .card-4{
+        background-position: right top; /* чтоб эта картинка не отрывалась от правого края*/
+    }
+    .card{
+        padding: 30px;
+        min-height: 300px; /*задаем карточкам минимальную высоту,чтобы они при уменьшении не растягивались в высоту*/
+    }
+}
